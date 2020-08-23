@@ -1,0 +1,198 @@
+.secao1 {
+    height: 100vh;
+    background-image: url('../../assets/img/fundo1.jpg');
+    background-size: cover;
+}
+
+.secao2 {
+    height: 100vh;
+    background-image: url('../../assets/img/fundo2.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.secao3 {
+    height: 100vh;
+    background-image: url('../../assets/img/fundo3.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.group {
+    padding: 150px 10px 0px 130px;
+    width: 30%;
+}
+
+.nome {
+    margin: 0;
+    font-size: 85px;
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #00ff5f !important;
+    height: 55px;
+    width: 120px;
+    border: none;
+    color: #fff !important;
+}
+
+.sobre {
+    text-align: center;
+    color: #fff;
+}
+
+.corpoSobre {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 55px;
+    color: #fff;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.card {
+    margin-left: 200px;
+    width: 350px;
+    height: 420px;
+    margin-bottom: -80px;
+}
+
+.perfil {
+    width: 170px;
+}
+
+.contentCard {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}
+
+.groupContact {
+    padding: 20px;
+}
+
+.groupContact a {
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+
+.icon {
+    width: 33px;
+    margin-bottom: -10px;
+}
+
+hr {
+    width: 100px;
+    border: solid 1px  #00ff5f;
+}
+
+.groupSobre {
+    padding-top: 150px;
+}
+
+.corpoCard{
+    height: 400px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    justify-content: center;
+}
+
+.teste {
+    background-image: url('../../assets/img/perfil.jpg');
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+.tec {
+    text-align: center;
+}
+
+.tec h1 {
+    color: #fff;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.back h1 {
+    color: #00ff5f;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.back .groupBack {
+    color: #00ff5f;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.back .groupBack p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.back .groupBack div {
+    margin-left: 50px;
+}
+
+.front h1{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.front .groupFront {
+    display: flex;
+    justify-content: center;
+}
+
+.front .groupFront img {
+    width: 90px;
+}
+
+.front .groupFront .spacoee {
+    margin-left: 50px;
+}
+
+.gridWidth {
+    width: 50%;
+}
+
+@media(max-width: 600px) {
+    .centralizar-nome  {
+        text-align: center;
+    }
+
+    .group {
+        width: 100%;
+        padding: 0;
+        margin-top: 180px;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
