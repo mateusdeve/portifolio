@@ -18,6 +18,20 @@
     width: 100%;
 }
 
+.secao4 {
+    height: 100vh;
+    background-image: url('../../assets/img/fundo4.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.secao5 {
+    height: 100vh;
+    background-image: url('../../assets/img/fundo5.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
 .group {
     padding: 150px 10px 0px 130px;
     width: 30%;
@@ -164,10 +178,15 @@ hr {
 .front .groupFront {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .front .groupFront img {
     width: 90px;
+}
+
+.front .groupFront .width {
+    width: 100px;
 }
 
 .front .groupFront .spacoee {
@@ -176,6 +195,31 @@ hr {
 
 .gridWidth {
     width: 50%;
+}
+
+.tituloComentario h1 {
+    color: #fff;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.comen {
+    text-align: center;
+}
+
+.comen h1 {
+    color: #000;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.secao4 .textArea {
+    width: 73%;
+}
+
+.secao4 .boneco {
+    width: 100%;
+    margin-top: 50px;
 }
 
 @media(max-width: 600px) {
