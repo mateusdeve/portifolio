@@ -41,8 +41,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="secao2">
-                <Grid item xs={6} className="inline">
-                    <div style={{height: 150}}></div>
+                <Grid item xs={12} sm={6} className="inline">
+                    <div className="solt"></div>
                     <div className="sobre">
                         <h1 style={{margin:0}}>Sobre</h1>
                         <hr/>
@@ -55,7 +55,7 @@ const Home = () => {
                         </p>
                     </div>
                 </Grid>
-                <Grid item xs={6} className="inline">
+                <Grid item xs={12} sm={6} className="inline">
                     <div className="cardContainer">
                         <Card className="card">
                             <CardContent className="contentCard">
@@ -74,6 +74,7 @@ const Home = () => {
                                 </div>
                         </Card>
                     </div>
+                    <div className="cardSolt"></div>
 
                 </Grid>
             </div>
@@ -82,7 +83,7 @@ const Home = () => {
                     <h1>Tecnologias</h1>
                 </div>
                 <Grid container>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <div className="back">
                             <h1>BACK-END</h1>
                             <div className="groupBack">
@@ -96,7 +97,7 @@ const Home = () => {
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item item xs={12} sm={6}>
                         <div className="front">
                             <h1>FRONT-END</h1>
                             <div className="groupFront">
@@ -117,18 +118,20 @@ const Home = () => {
                     <h1>Comentarios</h1>
                 </div>
                 <Grid container>
-                    <Grid item xs={6}>
-                    <form style={{marginTop:90}}>
+                    <Grid item xs={12} sm={6}>
+                    <form className="form" style={{marginTop:90}}>
                         <Grid container>
-                            <Grid item xs={2}></Grid>
+                            <Grid item xs={1}></Grid>
                         <Grid item xs={4}>
                             <TextField id="standard-basic" label="Nome" />
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid  className="spaceText" item xs={1} sm={0}></Grid>
+                        <Grid item xs={4}>
                             <TextField id="standard-basic" label="Titulo" />
                         </Grid>
-                        <Grid item xs={2}></Grid>
-                        <Grid item xs={10} style={{marginTop: 50}}>
+                        <Grid item xs={2} sm={3}></Grid>
+                        <Grid item xs={1}></Grid>
+                        <Grid item xs={11} sm={10} style={{marginTop: 50}}>
                             <TextField
                                 id="standard-multiline-static"
                                 label="Comentario"
@@ -138,16 +141,16 @@ const Home = () => {
                                 />
                         </Grid>
 
-                        <Grid item xs={2}></Grid>
+                        <Grid className="d-none" item xs={1}></Grid>
+                        <Grid item xs={1}></Grid>
                         <Grid item xs={10}>
-                            <Button className="button" style={{marginTop:50}} variant="contained">ENVIAR</Button>
+                            <Button className="button buttonComent" style={{marginTop:50}} variant="contained">ENVIAR</Button>
                         </Grid>
                         </Grid>
                     </form>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} className="imgComentario">
                         <Grid container>
-
                         <Grid item xs={3}></Grid>
                         <Grid item xs={7}>
                             <div>
@@ -167,7 +170,7 @@ const Home = () => {
                     justify="center"
                     alignItems="center">
                     <Grid item xs={12} style={{height: 100}}></Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={10} sm={3} >
                         <Card>
                             <p style={{textAlign: 'center'}}><strong>Lucas </strong>Comentou:</p>
                             <CardContent className="cardContent">
@@ -175,7 +178,7 @@ const Home = () => {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={3} style={{marginLeft: 25, marginRight: 25}}>
+                    <Grid  className="mtCard" item xs={10} sm={3} style={{marginLeft: 25, marginRight: 25}}>
                         <Card>
                             <p style={{textAlign: 'center'}}><strong>Gustavo </strong>Comentou:</p>
                             <CardContent className="cardContent">
@@ -183,7 +186,7 @@ const Home = () => {
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid className="mtCard" item xs={10} sm={3}>
                         <Card>
                             <p style={{textAlign: 'center'}}><strong>João </strong>Comentou</p>
                             <CardContent className="cardContent">
@@ -200,7 +203,7 @@ const Home = () => {
                     direction="row"
                     justify="center"
                     alignItems="center">
-                        <Grid item xs={4} style={{textAlign: 'center'}}>
+                        <Grid item xs={6} style={{textAlign: 'center'}}>
                             <a href="">
                                 <img src={githubIcon} alt="" className="iconGit" />
                             </a>

@@ -271,6 +271,14 @@ hr {
     width: 25px;
 }
 
+.solt {
+    height: 150px;
+}
+
+.spaceText {
+    display: none;
+}
+
 @media(max-width: 600px) {
     .centralizar-nome  {
         text-align: center;
@@ -287,5 +295,82 @@ hr {
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+    }
+
+    .inline {
+        display: block;
+    }
+    .secao2 {
+        height: 100%;
+    }
+
+    .secao3 {
+        height: 100%;
+    }
+
+    .secao4 {
+        height: 100%;
+    }
+
+    .secao5 {
+        margin-top: -20px;
+        height: 100%;
+    }
+
+    .card {
+        margin-left: 30px;
+        width: 350px;
+        height: 420px;
+        margin-bottom: 0px;
+    }
+
+    .corpoSobre {
+        padding: 55px;
+        padding-top: 10px;
+    }
+
+    .front .groupFront img {
+        width: 60px;
+    }
+
+    .front .groupFront .width {
+        width: 70px;
+        margin-bottom: 50px;
+    }
+
+    .solt {
+        height: 30px;
+    }
+
+    .cardSolt {
+        height: 40px;
+    }
+
+    .imgComentario {
+        display: none;
+    }
+
+     .buttonComent {
+         margin-bottom: 30px !important;
+     }
+
+     .spaceText {
+        display: block;
+    }
+
+    .mtCard {
+        margin-top: 30px !important;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .form {
+        margin-left: 30px;
     }
 }
