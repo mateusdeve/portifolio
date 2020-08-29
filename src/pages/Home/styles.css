@@ -222,6 +222,55 @@ hr {
     margin-top: 50px;
 }
 
+.cardContent {
+    min-height: 200px;
+}
+
+.footer {
+    height: 60px;
+    background: #DDD8EB;
+}
+
+.footer .nomeApp{
+    height: 30px;
+    background: #B6A9DF;
+}
+
+.footer .nomeApp p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5px;
+}
+
+.footer .socialGroup {
+    padding: 0;
+    padding-top: 15px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer .socialGroup .iconGit {
+    width: 25px;
+}
+
+.footer .socialGroup .iconInsta {
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer .socialGroup .iconLink {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.footer .socialGroup .iconFace {
+    width: 25px;
+}
+
 @media(max-width: 600px) {
     .centralizar-nome  {
         text-align: center;

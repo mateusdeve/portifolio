@@ -13,6 +13,13 @@ import react from '../../assets/img/react.png'
 import xd from '../../assets/img/xd.png'
 import boneco from '../../assets/img/boneco.png'
 
+import githubIcon from '../../assets/img/githubIcon.png'
+import instagramIcon from '../../assets/img/instagramIcon.png'
+import linkedinIcon from '../../assets/img/linkedinIcon.png'
+import facebookIcon from '../../assets/img/facebookIcon.png'
+
+
+
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
@@ -133,7 +140,7 @@ const Home = () => {
 
                         <Grid item xs={2}></Grid>
                         <Grid item xs={10}>
-                            <Button className="button" style={{marginTop:50}} variant="contained">SOBRE</Button>
+                            <Button className="button" style={{marginTop:50}} variant="contained">ENVIAR</Button>
                         </Grid>
                         </Grid>
                     </form>
@@ -152,10 +159,67 @@ const Home = () => {
                 </Grid>
             </div>
             <div className="secao5">
-            <div className="comen">
+                <div className="comen">
                     <h1>Ultimos Comentarios</h1>
                 </div>
+                <Grid container
+                    direction="row"
+                    justify="center"
+                    alignItems="center">
+                    <Grid item xs={12} style={{height: 100}}></Grid>
+                    <Grid item xs={3}>
+                        <Card>
+                            <p style={{textAlign: 'center'}}><strong>Lucas </strong>Comentou:</p>
+                            <CardContent className="cardContent">
+                                <p>lorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsun    </p>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={3} style={{marginLeft: 25, marginRight: 25}}>
+                        <Card>
+                            <p style={{textAlign: 'center'}}><strong>Gustavo </strong>Comentou:</p>
+                            <CardContent className="cardContent">
+                                <p>lorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsun    </p>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <Card>
+                            <p style={{textAlign: 'center'}}><strong>João </strong>Comentou</p>
+                            <CardContent className="cardContent">
+                                <p>lorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsun    </p>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                </Grid>
             </div>
+            <footer className="footer">
+                <div className="socialGroup">
+                    <Grid
+                    container
+                    direction="row"
+                    justify="center"
+                    alignItems="center">
+                        <Grid item xs={4} style={{textAlign: 'center'}}>
+                            <a href="">
+                                <img src={githubIcon} alt="" className="iconGit" />
+                            </a>
+                            <a href="">
+                                <img src={instagramIcon} alt="" className="iconInsta"/>
+                            </a>
+                            <a href="">
+                                <img src={linkedinIcon} alt="" className="iconLink"/>
+                            </a>
+                            <a href="">
+                                <img src={facebookIcon} alt="" className="iconFace"/>
+                            </a>
+                        </Grid>
+                    </Grid>
+                </div>
+                <div className="nomeApp">
+                    <p>Mateus Silveira Pires</p>
+                </div>
+            </footer>
         </>
     )
 }
