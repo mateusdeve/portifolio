@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.css';
-import Header from '../../components/Header';
 import Grid from '@material-ui/core/Grid';
 
 import perfil from '../../assets/img/perfil.jpg';
@@ -15,6 +14,8 @@ import boneco from '../../assets/img/boneco.png'
 import feirao from '../../assets/img/feirao.jpg'
 import vulcano from '../../assets/img/vulcano.jpg'
 
+import logo from '../../assets/img/logo.png';
+
 import githubIcon from '../../assets/img/githubIcon.png'
 import instagramIcon from '../../assets/img/instagramIcon.png'
 import linkedinIcon from '../../assets/img/linkedinIcon.png'
@@ -26,25 +27,43 @@ import Button from '@material-ui/core/Button';
 
 import Typed from 'react-typed';
 
+
 const Home = () => {
+    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
+    const myRef = React.useRef(null);
+    const executeScroll = () => scrollToRef(myRef)
+    const contatoRef = React.useRef(null);
+    const executeScrollcontact = () => scrollToRef(contatoRef);
+    const tecnologiaRef = React.useRef(null);
+    const executeScrollTecnologia = () => scrollToRef(tecnologiaRef)
     return (
         <>
             <div className="secao1">
-                <Header />
+            <nav>
+                <img src={logo} className="logo" alt=""/>
+                <div className="menu">
+                    <div className="texts">
+                    <Button style={{color:'white', marginRight: 20}} onClick={executeScroll} >SOBRE</Button>
+                    <Button style={{color:'white', marginRight: 20}} onClick={executeScrollTecnologia}>TECNOLOGIAS</Button>
+                    <Button style={{color:'white', marginRight: 50}} onClick={executeScrollcontact} >CONTATO</Button>
+                    </div>
+                </div>
+            </nav>
                 <div className="group">
                     <div className="centralizar-nome">
                         <h1 className="nome">Mateus Pires</h1>
                     </div>
                     <div className="buttons">
-                        <Button className="button" variant="contained">SOBRE</Button>
-                        <Button className="button" style={{marginLeft: 30}}variant="contained">CONTATO</Button>
+                            <Button className="button" onClick={executeScroll} variant="contained">SOBRE</Button>
+                    
+                        <Button className="button" onClick={executeScrollcontact} style={{marginLeft: 30}}variant="contained">CONTATO</Button>
                     </div>
                 </div>
             </div>
-            <div className="secao2">
+            <div className="secao2" ref={myRef} id="sobre">
                 <Grid item xs={12} sm={6} className="inline">
                     <div className="solt"></div>
-                    <div className="sobre" id="sobre">
+                    <div className="sobre">
                         <h1 style={{margin:0}}>Sobre</h1>
                         <hr/>
                         <p className="corpoSobre">Sou desenvolvedor Front - End. <br/> 
@@ -79,7 +98,7 @@ const Home = () => {
 
                 </Grid>
             </div>
-            <div className="secao3">
+            <div className="secao3" ref={tecnologiaRef}>
                 <div className="tec">
                     <h1>Tecnologias</h1>
                 </div>
@@ -94,7 +113,6 @@ const Home = () => {
                                 ]}
                                     typeSpeed={90}
                                     loop
-                                    loopCount={2}
                                     className="typedFont"
                                     >
                                 </Typed>
@@ -117,7 +135,7 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div className="secao4">
+            <div className="secao4" ref={contatoRef}>
                 <div className="comen">
                     <h1>Contato</h1> 
                 </div>
