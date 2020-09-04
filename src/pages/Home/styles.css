@@ -155,7 +155,7 @@ hr {
 
 .back .groupBack {
     color: #00ff5f;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-top: 50px;
 }
 
@@ -281,6 +281,11 @@ hr {
 
 .imgCard {
     width: 100%;
+}
+
+.typedFont {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 @media(max-width: 600px) {

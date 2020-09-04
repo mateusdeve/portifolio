@@ -24,6 +24,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 
+import Typed from 'react-typed';
+
 const Home = () => {
     return (
         <>
@@ -86,13 +88,16 @@ const Home = () => {
                         <div className="back">
                             <h1>BACK-END</h1>
                             <div className="groupBack">
-                                <p>~$ Node.JS</p>
-                                <div>
-                                    <p> Express.js</p>
-                                    <p> MongoDB</p>
-                                    <p> MySQL</p>
-                                    <p> PostegreSQL |</p>
-                                </div>
+                                <Typed
+                                strings={[
+                                    '$ Node.JS <br /><br /> Express.js <br /><br /> MongoDB <br /><br /> MySQL <br /><br /> PostegreSQL ',
+                                ]}
+                                    typeSpeed={90}
+                                    loop
+                                    loopCount={2}
+                                    className="typedFont"
+                                    >
+                                </Typed>
                             </div>
                         </div>
                     </Grid>
