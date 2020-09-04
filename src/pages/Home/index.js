@@ -12,18 +12,17 @@ import js from '../../assets/img/js.png'
 import react from '../../assets/img/react.png'
 import xd from '../../assets/img/xd.png'
 import boneco from '../../assets/img/boneco.png'
+import feirao from '../../assets/img/feirao.jpg'
+import vulcano from '../../assets/img/vulcano.jpg'
 
 import githubIcon from '../../assets/img/githubIcon.png'
 import instagramIcon from '../../assets/img/instagramIcon.png'
 import linkedinIcon from '../../assets/img/linkedinIcon.png'
 import facebookIcon from '../../assets/img/facebookIcon.png'
 
-
-
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 
 const Home = () => {
     return (
@@ -43,7 +42,7 @@ const Home = () => {
             <div className="secao2">
                 <Grid item xs={12} sm={6} className="inline">
                     <div className="solt"></div>
-                    <div className="sobre">
+                    <div className="sobre" id="sobre">
                         <h1 style={{margin:0}}>Sobre</h1>
                         <hr/>
                         <p className="corpoSobre">Sou desenvolvedor Front - End. <br/> 
@@ -115,40 +114,9 @@ const Home = () => {
             </div>
             <div className="secao4">
                 <div className="comen">
-                    <h1>Comentarios</h1> 
+                    <h1>Contato</h1> 
                 </div>
                 <Grid container>
-                    <Grid item xs={12} sm={6}>
-                    <form className="form" style={{marginTop:90}}>
-                        <Grid container>
-                            <Grid item xs={1}></Grid>
-                        <Grid item xs={4}>
-                            <TextField id="standard-basic" label="Nome" />
-                        </Grid>
-                        <Grid  className="spaceText" item xs={1} sm={0}></Grid>
-                        <Grid item xs={4}>
-                            <TextField id="standard-basic" label="Titulo" />
-                        </Grid>
-                        <Grid item xs={2} sm={3}></Grid>
-                        <Grid item xs={1}></Grid>
-                        <Grid item xs={11} sm={10} style={{marginTop: 50}}>
-                            <TextField
-                                id="standard-multiline-static"
-                                label="Comentario"
-                                multiline
-                                rows={4}
-                                className="textArea"
-                                />
-                        </Grid>
-
-                        <Grid className="d-none" item xs={1}></Grid>
-                        <Grid item xs={1}></Grid>
-                        <Grid item xs={10}>
-                            <Button className="button buttonComent" style={{marginTop:50}} variant="contained">ENVIAR</Button>
-                        </Grid>
-                        </Grid>
-                    </form>
-                    </Grid>
                     <Grid item xs={6} className="imgComentario">
                         <Grid container>
                         <Grid item xs={3}></Grid>
@@ -159,38 +127,59 @@ const Home = () => {
                         </Grid>
                         </Grid>
                     </Grid>
+                    <Grid container item xs={6}
+                    justify="center"
+                    alignItems="center">
+                        <Grid item xs={7} style={{paddingTop: 50}}>
+                            <div>
+                                <p style={{padding: 10}}>
+                                    <strong> Telefone: </strong>
+                                    <a style={{textDecoration: 'none', color: 'black'}} href="">(61) 9 8428-8058</a> 
+                                </p>
+                                <p style={{padding: 10}}>
+                                    <strong> Instagram: </strong>
+                                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.instagram.com/mateuzzp/"> mateuzzp</a>
+                                </p>
+                                <p style={{padding: 10}}>
+                                    <strong> Facebook: </strong>
+                                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.facebook.com/mateus.silveirapires/">Mateus Pires</a> 
+                                </p> 
+                                <p style={{padding: 10}}>
+                                    <strong> Email: </strong>
+                                     <a style={{textDecoration: 'none', color: 'black'}} href="mailto:mateus.dev.ti@gmail.com">mateus.dev.ti@gmail.com</a> 
+                                </p> 
+                            </div>
+                        </Grid>
+
+                    </Grid>
                 </Grid>
             </div>
             <div className="secao5">
                 <div className="comen">
-                    <h1>Ultimos Comentarios</h1>
+                    <h1>Ultimos Projetos</h1>
                 </div>
                 <Grid container
                     direction="row"
                     justify="center"
                     alignItems="center">
                     <Grid item xs={12} style={{height: 100}}></Grid>
-                    <Grid item xs={10} sm={3} >
+                    <Grid item xs={10} sm={4} >
                         <Card>
-                            <p style={{textAlign: 'center'}}><strong>Lucas </strong>Comentou:</p>
+                            <p style={{textAlign: 'center'}}><strong>Feirão modas</strong></p>
                             <CardContent className="cardContent">
-                                <p>lorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsun    </p>
+                                <a href="https://feiraomodas.com.br/" target="_blanck">
+                                    <img src={feirao} className="imgCard" alt=""/>
+                                </a>
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid  className="mtCard" item xs={10} sm={3} style={{marginLeft: 25, marginRight: 25}}>
+                    <Grid  className="mtCard" item xs={10} sm={4} style={{marginLeft: 25, marginRight: 25}}>
                         <Card>
-                            <p style={{textAlign: 'center'}}><strong>Gustavo </strong>Comentou:</p>
+                            <p style={{textAlign: 'center'}}><strong>Vulcano</strong></p>
                             <CardContent className="cardContent">
-                                <p>lorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsun    </p>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid className="mtCard" item xs={10} sm={3}>
-                        <Card>
-                            <p style={{textAlign: 'center'}}><strong>João </strong>Comentou</p>
-                            <CardContent className="cardContent">
-                                <p>lorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsunlorem ipsun    </p>
+                            <a href="https://beta.yuupe.com/pagina/254/" target="_blanck">
+                                <img src={vulcano} className="imgCard" alt=""/>
+                            </a>
                             </CardContent>
                         </Card>
                     </Grid>
