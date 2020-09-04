@@ -217,16 +217,16 @@ const Home = () => {
                     justify="center"
                     alignItems="center">
                         <Grid item xs={6} style={{textAlign: 'center'}}>
-                            <a href="">
+                            <a href="https://github.com/mateusdeve" target="_blanck">
                                 <img src={githubIcon} alt="" className="iconGit" />
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/mateuzzp/"target="_blanck">
                                 <img src={instagramIcon} alt="" className="iconInsta"/>
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/mateussilveirapires/" target="_blanck">
                                 <img src={linkedinIcon} alt="" className="iconLink"/>
                             </a>
-                            <a href="">
+                            <a href="https://www.facebook.com/mateus.silveirapires/" target="_blanck">
                                 <img src={facebookIcon} alt="" className="iconFace"/>
                             </a>
                         </Grid>
