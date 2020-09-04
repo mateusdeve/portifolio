@@ -32,7 +32,7 @@ import Typed from 'react-typed';
 const Home = () => {
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
     const myRef = React.useRef(null);
-    const executeScroll = () => scrollToRef(myRef)
+    const executeScroll = () => scrollToRef(myRef);
     const contatoRef = React.useRef(null);
     const executeScrollcontact = () => scrollToRef(contatoRef);
     const tecnologiaRef = React.useRef(null);
