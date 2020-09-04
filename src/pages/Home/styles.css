@@ -355,8 +355,13 @@ hr {
         height: 100%;
     }
 
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+    }
+
     .card {
-        margin-left: 30px;
+        margin-left: 0px;
         width: 350px;
         height: 420px;
         margin-bottom: 0px;
