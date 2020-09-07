@@ -67,7 +67,6 @@ html {
 }
 
 .corpoSobre {
-    text-align: center;
     font-size: 28px;
     padding-left: 55px;
     color: #fff;
@@ -318,7 +317,24 @@ hr {
     color: #fff;
 }
 
+.brMobile {
+    display: none;
+}
+
 @media(max-width: 600px) {
+    
+    .groupBack {
+        min-height: 450px !important;
+    }
+
+    .brMobile {
+        display: block;
+    }
+
+    .marginContato {
+        margin-left: 60px;
+    }
+
     .centralizar-nome  {
         text-align: center;
     }
@@ -371,6 +387,8 @@ hr {
     .corpoSobre {
         padding: 55px;
         padding-top: 10px;
+        text-align: left;
+        font-size: 25px;
     }
 
     .front .groupFront img {

@@ -67,7 +67,7 @@ const Home = () => {
                     <div className="sobre">
                         <h1 style={{margin:0}}>Sobre</h1>
                         <hr/>
-                        <p className="corpoSobre">Sou desenvolvedor Front - End. <br/> 
+                        <p className="corpoSobre">Sou desenvolvedor Front - End. <br/> <br className="brMobile"/>
                             Acho que a tecnologia deve melhorar a vida
                             das pessoas e estou sempre estudando para
                             aprimorar meus conhecimentos, superar
@@ -110,7 +110,7 @@ const Home = () => {
                             <div className="groupBack">
                                 <Typed
                                 strings={[
-                                    '$ Node.JS <br /><br /> Express.js <br /><br /> MongoDB <br /><br /> MySQL <br /><br /> PostegreSQL ',
+                                    '$ Node.JS <br /><br /> Express.js <br /><br /> MongoDB <br /><br /> MySQL <br /><br /> PostgreSQL ',
                                 ]}
                                     typeSpeed={90}
                                     loop
@@ -154,22 +154,22 @@ const Home = () => {
                     <Grid container item xs={6}
                     justify="center"
                     alignItems="center">
-                        <Grid item xs={7} style={{paddingTop: 50}}>
-                            <div>
+                        <Grid item xs={12} sm={7} style={{paddingTop: 60}}>
+                            <div className="marginContato">
                                 <p style={{padding: 10}}>
-                                    <strong> Telefone: </strong>
+                                    <strong> Telefone: </strong><br className="brMobile"/>
                                     <a style={{textDecoration: 'none', color: 'black'}} href="">(61) 9 8428-8058</a> 
                                 </p>
                                 <p style={{padding: 10}}>
-                                    <strong> Instagram: </strong>
+                                    <strong> Instagram: </strong><br className="brMobile"/>
                                      <a style={{textDecoration: 'none', color: 'black'}} href="https://www.instagram.com/mateuzzp/"> mateuzzp</a>
                                 </p>
                                 <p style={{padding: 10}}>
-                                    <strong> Facebook: </strong>
+                                    <strong> Facebook: </strong><br className="brMobile"/>
                                      <a style={{textDecoration: 'none', color: 'black'}} href="https://www.facebook.com/mateus.silveirapires/">Mateus Pires</a> 
                                 </p> 
                                 <p style={{padding: 10}}>
-                                    <strong> Email: </strong>
+                                    <strong> Email: </strong><br className="brMobile"/>
                                      <a style={{textDecoration: 'none', color: 'black'}} href="mailto:mateus.dev.ti@gmail.com">mateus.dev.ti@gmail.com</a> 
                                 </p> 
                             </div>
