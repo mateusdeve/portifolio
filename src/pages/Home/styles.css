@@ -191,7 +191,11 @@ hr {
 }
 
 .front .groupFront .width {
-    width: 100px;
+    width: 70px;
+}
+
+.front .groupFront .width2 {
+    width: 76px;
 }
 
 .front .groupFront .spacoee {
@@ -397,6 +401,10 @@ hr {
 
     .front .groupFront .width {
         width: 70px;
+    }
+
+    .front .groupFront .width2 {
+        width: 75px;
         margin-bottom: 50px;
     }
 

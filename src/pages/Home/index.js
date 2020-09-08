@@ -124,14 +124,14 @@ const Home = () => {
                         <div className="front">
                             <h1>FRONT-END</h1>
                             <div className="groupFront">
-                                <img src={html} alt=""/>
-                                <img className="spacoee" src={css} alt=""/>
-                                <img className="spacoee" src={js} alt=""/>
+                                <img className="width" src={html} alt=""/>
+                                <img className="spacoee width" src={css} alt=""/>
+                                <img className="spacoee width" src={js} alt=""/>
                             </div>
-                                <div className="groupFront">
-                                    <img className="width" src={react} alt=""/>
-                                    <img className="spacoee width" src={xd} alt=""/>
-                                </div>
+                            <div className="groupFront">
+                                <img className="width2" src={react} alt=""/>
+                                <img className="spacoee width2" src={xd} alt=""/>
+                            </div>
                         </div>
                     </Grid>
                 </Grid>
